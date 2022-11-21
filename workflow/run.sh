@@ -4,8 +4,9 @@ set -e
 echo docker pull continuumio/anaconda3
 docker pull continuumio/anaconda3
 
-echo docker build -t upskills-workflow-1 .
-docker build -t upskills-workflow-1 .
+echo docker build -t upskills-workflow-2b .
+docker build -t upskills-workflow-2b .
 
-echo docker run -it --rm upskills-workflow-1:latest /opt/conda/bin/python /scripts/iris.py
-docker run -it --rm upskills-workflow-1:latest /opt/conda/bin/python /scripts/iris.py
+echo "Entering docker shell, type \"exit\" to return back to host shell"
+echo docker run -it --rm -v cd:/host upskills-workflow-2b:latest /bin/bash
+docker run -it --rm -v cd:/host upskills-workflow-2b:latest /bin/bash
