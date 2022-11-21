@@ -17,7 +17,8 @@ I advise to try out the tutorial branch [dockerize-anaconda3-pyscript](https://b
 - [A Practical Introduction to Container Terminology](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction#)
 
 
-Commonly used Docker command
+Commonly used Docker command:
+
 | Command     | Definition |
 | --------|---------|
 | `docker pull NAME[:TAG]`   | Pull image from container registry DockerHub to local with NAME is the image name.   |
