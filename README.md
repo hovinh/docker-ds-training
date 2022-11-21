@@ -13,6 +13,8 @@ Terminologies is one challenge I face when working with Docker; understanding th
 -- Scott McCarty, Red Hat --
 
 I advise to try out the tutorial branch [dockerize-anaconda3-pyscript](https://bitbucket.org/hoxuanvinh-upskills/docker-ds-training/src/dockerize-anaconda3-pyscript/) before reading this very good blog to appreciate and gain better clarity on container terminology.
+- Test
+- Test C [A Practical Introduction to Container Terminology](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction#)
 - [A Practical Introduction to Container Terminology](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction#)
 
 
