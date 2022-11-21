@@ -26,3 +26,29 @@ The workflow list consists of:
 * [dockerize-anaconda3-jupyternotebook](???): build an image with runnable Jupyter notebook.
 * [dockerize-anaconda3-condaenv](???): build an image with pre-made Anaconda environment.
 * [dockerize-anaconda3-interact-multicontainers](???): call out for contribution -- run two or more containers altogether and can interact/communicate among them; potentially make use of DockerCompose. 
+
+
+asasas
+*  Item 1
+*  Item 2
+*  Item 3
+    *  Item 3a
+    *  Item 3b
+    *  Item 3c
+
+asdadasd
+
+1.  Step 1
+2.  Step 2
+3.  Step 3
+    1.  Step 3.1
+    2.  Step 3.2
+    3.  Step 3.3
+
+asdadas
+1.  Step 1
+2.  Step 2
+3.  Step 3
+    *  Item 3a
+	*  Item 3b
+	*  Item 3c
