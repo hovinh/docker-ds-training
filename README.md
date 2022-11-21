@@ -14,8 +14,6 @@ Terminologies is one challenge I face when working with Docker; understanding th
 
 I advise to try out the tutorial branch [dockerize-anaconda3-pyscript](https://bitbucket.org/hoxuanvinh-upskills/docker-ds-training/src/dockerize-anaconda3-pyscript/) before reading this very good blog to appreciate and gain better clarity on container terminology.
 
-- Test
-- Test C [A Practical Introduction to Container Terminology](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction#)
 - [A Practical Introduction to Container Terminology](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction#)
 
 
@@ -29,30 +27,4 @@ The workflow list consists of:
 2.  [dockerize-anaconda3-mountvolumn](???): build an image that mounts to host file system so any data change made can be resumed when run the container next time.
 3.  [dockerize-anaconda3-jupyternotebook](???): build an image with runnable Jupyter notebook.
 4.  [dockerize-anaconda3-condaenv](???): build an image with pre-made Anaconda environment.
-*   [dockerize-anaconda3-interact-multicontainers](???): call out for contribution -- run two or more containers altogether and can interact/communicate among them; potentially make use of DockerCompose. 
-
-
-asasas
-*  Item 1
-*  Item 2
-*  Item 3
-    *  Item 3a
-    *  Item 3b
-    *  Item 3c
-
-asdadasd
-
-1.  Step 1
-2.  Step 2
-3.  Step 3
-    1.  Step 3.1
-    2.  Step 3.2
-    3.  Step 3.3
-
-asdadas
-1.  Step 1
-2.  Step 2
-3.  Step 3
-    *  Item 3a
-	*  Item 3b
-	*  Item 3c
+5.  [dockerize-anaconda3-interact-multicontainers](???): call out for contribution -- run two or more containers altogether and can interact/communicate among them; potentially make use of DockerCompose. 
