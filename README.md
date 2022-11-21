@@ -24,7 +24,7 @@ Digest: sha256:b0aec79c5f949f5f211139228a6b356786349f9781aad3e81020f90c1dc74ec2
 Status: Downloaded newer image for hovinh39/dockerize-anaconda3-pyscript:latest
 docker.io/hovinh39/dockerize-anaconda3-pyscript:latest
 ```
--  Run the image (or create the container) and verify the `iris.py` is inside `scripts` folder. Simply ignore the argument for now.
+-  Run the image, i.e. create the container, and verify the `iris.py` is inside `scripts` folder. Simply ignore other arguments in the Docker command for now.
 ```bash
 $ docker run -it --rm dockerize-anaconda3-pyscript:latest 
 root@0165504122f6:/# dir
@@ -67,7 +67,7 @@ CONTAINER ID   IMAGE          COMMAND       CREATED          STATUS          POR
 $ docker exec -it 6d6120118285 bash
 root@6d6120118285:/# 
 ```
-- Now add a new layer to the existing image by creating a new directory. You are supposed to make a new file inside, but I will skip it.
+- Now add a new layer to the existing image by creating a new directory. You are also supposed to make a new file inside, but I will skip it.
 ```bash
 root@6d6120118285:/# ls
 bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
@@ -77,21 +77,21 @@ bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  s
 root@6d6120118285:/# exit
 exit
 ```
-- Now commit this container to a new image by passing the container ID `6d6120118285` (yours would be different). Notice `hovinh39` is my Docker Hub account, I need to add it here with the format `dockerhub-account\my-image` to **tag** it with my account so later can push to Docker Hub.
+- Now commit this container to a new image by passing the container ID `6d6120118285` (yours would be different). Notice `hovinh39` is my Docker Hub account, I need to add it here with the format `dockerhub-account\my-image` to **tag** it with my account so later can push to Docker Hub. `optional-tag` is another optional tag that serves other purpose, say, version control of your images.
 ```bash
 $ docker ps
 CONTAINER ID   IMAGE          COMMAND       CREATED          STATUS          PORTS     NAMES
 6d6120118285   52531efac757   "/bin/bash"   24 minutes ago   Up 24 minutes             compassionate_turing
-$ docker commit 6d6120118285 hovinh39/test-image-123:optional-tag
+$ docker commit 6d6120118285 hovinh39/dockerize-anaconda3-pyscript::optional-tag
 $ docker images
 REPOSITORY                 TAG       IMAGE ID       CREATED          SIZE
-hovinh39/test-image-123    latest    e9504af0f290   14 seconds ago   4.07GB
+hovinh39/dockerize-anaconda3-pyscript:    latest    e9504af0f290   14 seconds ago   4.07GB
 continuumio/anaconda3      latest    52531efac757   2 days ago       4.07GB
 ```
 - Let's push this image to Docker Hub. If it's failed, you may need to login first with `docker login`. 
 ```bash
-$ docker push hovinh39/test-image-123:optional-tag
-The push refers to repository [docker.io/hovinh39/test-image-123]
+$ docker push hovinh39/dockerize-anaconda3-pyscript::optional-tag
+The push refers to repository [docker.io/hovinh39/dockerize-anaconda3-pyscript:]
 549666d465f6: Pushed
 497abe10839f: Mounted from continuumio/anaconda3
 ec4a38999118: Mounted from continuumio/anaconda3
@@ -148,4 +148,5 @@ ab25cef981e2: Pushed
 latest: digest: sha256:b0aec79c5f949f5f211139228a6b356786349f9781aad3e81020f90c1dc74ec2 size: 1157
 ```
 
-
+#### **Approach 3**: Automate further with Bash shell script.
+Instead of typing into Command Prompt, we can automate with a Bash shell script. However, I was unable to run it as expected on Windows; this was originally prepared by Tuyen (ductuyen.ta@upskills.ai). Please feel free to make a PR to improve this document if you are able to make it work.
