@@ -4,7 +4,7 @@ This repo aims to provide a step-by-step guide that cover some common scenarios 
 
 ## dockerize-anaconda3-interact-multicontainers
 
-Status: Call out for PR.
+Status: Call out for PR. Please check `workflow` folder for provided example. I was not able to make it work in my computer yet.
 
 Objective:Run two or more containers altogether and can interact/communicate among them; potentially make use of DockerCompose.
 
