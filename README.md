@@ -26,11 +26,11 @@ $ docker run -d -p 8888:8888 hovinh39/dockerize-anaconda3-jupyternotebook
 d0c12122f97d464f4bc7438b4b34cf400fcaa2896f94fae881cc5dc5026ea76b
 ```
 
-- In your browser, enter localhost with the address `http://localhost:8888/` and enter the password `test` (check `Dockerfile` to see how this is setup). You should now be able to run the `tensorflow_example.ipynb` with all relevant package pre-installed.
+- In your browser, enter `http://localhost:8888/` in the address bar and enter the password `test` (check `Dockerfile` to see how this is setup). You should now be able to run the `tensorflow_example.ipynb` with all relevant packages pre-installed.
 
 ## Build the image
 
-- Navigate to `workflow` folder and start the building. Notice how the `Dockerfile` is written: it has foundational image is `tensorflow/tensorflow:latest-py3`, copies the `tensorflow_example.ipynb` into the image, then trigger `run_jupyter.sh`. Therefore, that means if we run the container, it will also run the command inside `run_jupyter.sh`. Also, the password to access the notebook is set to `test`. For a more secured approach, please check `workflow/secure_run.sh`.
+- Navigate to `workflow` folder and start the building. Notice how the `Dockerfile` is written: it has foundational image is `tensorflow/tensorflow:latest-py3`, copies the `tensorflow_example.ipynb` into the image, then trigger `run_jupyter.sh`. Therefore, that means if we run the container, it will also run the commands inside `run_jupyter.sh`. Also, the password to access the notebook is set to `test`. For a more secured approach, please check `workflow/secure_run.sh`.
 ```bash
 $ cd workflow
 $ docker build -t hovinh39/dockerize-anaconda3-jupyternotebook .
