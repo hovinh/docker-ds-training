@@ -21,11 +21,11 @@ I advise to try out the tutorial branch [dockerize-anaconda3-pyscript](https://b
 The repo will have multiple branches, each corresponding to one template workflow. Each template consists of two parts: (1) running the docker image had been built by me that is archived on DockerHub; and (2) build your own docker image.
 
 The workflow list consists of:
-* [dockerize-anaconda3-pyscript](https://bitbucket.org/hoxuanvinh-upskills/docker-ds-training/src/dockerize-anaconda3-pyscript/): build an image with a new script that is runnable on a pre-built Anaconda (Python 3.X) image.
-* [dockerize-anaconda3-mountvolumn](???): build an image that mounts to host file system so any data change made can be resumed when run the container next time.
-* [dockerize-anaconda3-jupyternotebook](???): build an image with runnable Jupyter notebook.
-* [dockerize-anaconda3-condaenv](???): build an image with pre-made Anaconda environment.
-* [dockerize-anaconda3-interact-multicontainers](???): call out for contribution -- run two or more containers altogether and can interact/communicate among them; potentially make use of DockerCompose. 
+1.  [dockerize-anaconda3-pyscript](https://bitbucket.org/hoxuanvinh-upskills/docker-ds-training/src/dockerize-anaconda3-pyscript/): build an image with a new script that is runnable on a pre-built Anaconda (Python 3.X) image.
+2.  [dockerize-anaconda3-mountvolumn](???): build an image that mounts to host file system so any data change made can be resumed when run the container next time.
+3.  [dockerize-anaconda3-jupyternotebook](???): build an image with runnable Jupyter notebook.
+4.  [dockerize-anaconda3-condaenv](???): build an image with pre-made Anaconda environment.
+*   [dockerize-anaconda3-interact-multicontainers](???): call out for contribution -- run two or more containers altogether and can interact/communicate among them; potentially make use of DockerCompose. 
 
 
 asasas
