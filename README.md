@@ -17,7 +17,7 @@ I advise to try out the tutorial branch [dockerize-anaconda3-pyscript](https://b
 - [A Practical Introduction to Container Terminology](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction#)
 
 
-Commonly used Docker command:
+Commonly used Docker commands:
 
 | Command     | Definition |
 | --------|---------|
