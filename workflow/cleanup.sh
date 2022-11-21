@@ -1,3 +1,4 @@
 #!/bin/bash
-docker rm -f upskills-neo4j
-rm -rf ./data ./logs
+echo docker rm -f upskills-workflow-3a-container
+docker rm -f upskills-workflow-3a-container
+docker ps
